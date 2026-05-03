@@ -425,3 +425,592 @@ body {
     border-right: none;
   }
 }
+
+/* ===== PAGE HERO ===== */
+.page-hero {
+  background: #2a1a00;
+  background-image: linear-gradient(to right, #2a1a00, #4a2800);
+  padding: 32px 0 24px;
+  border-bottom: 3px solid #c8b87a;
+}
+
+.page-hero-title {
+  color: #e8d5a0;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.page-hero-subtitle {
+  color: #c8b87a;
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+/* ===== INNER SECTIONS ===== */
+.inner-section {
+  padding: 52px 0;
+}
+
+.inner-section--alt {
+  background: #f7f4ed;
+}
+
+.section-heading {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #2a1a00;
+  margin-bottom: 28px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #c8b87a;
+  display: inline-block;
+}
+
+.section-lead {
+  font-size: 0.95rem;
+  color: #555;
+  max-width: 800px;
+  margin-bottom: 28px;
+  line-height: 1.75;
+}
+
+/* ===== ABOUT — HISTORY SIDEBAR ===== */
+.history-sidebar {
+  background: #f7f4ed;
+  border: 1px solid #e0d8c0;
+  border-left: 4px solid #c8b87a;
+  padding: 20px;
+}
+
+.sidebar-heading {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #2a1a00;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.84rem;
+  color: #555;
+}
+
+.sidebar-list li {
+  padding: 7px 0;
+  border-bottom: 1px solid #e0d8c0;
+}
+
+.sidebar-list li:last-child {
+  border-bottom: none;
+}
+
+/* ===== ABOUT — FOUNDERS ===== */
+.founder-card {
+  border: 1px solid #ddd;
+  border-top: 5px solid #ccc;
+  background: #fff;
+  padding: 20px;
+  height: 100%;
+}
+
+.founder-card--gryffindor { border-top-color: #740001; }
+.founder-card--slytherin  { border-top-color: #1a472a; }
+.founder-card--ravenclaw  { border-top-color: #0e1a40; }
+.founder-card--hufflepuff { border-top-color: #ecb939; }
+
+.founder-house-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.founder-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.founder-bio {
+  font-size: 0.83rem;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 14px;
+}
+
+.founder-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.trait-badge {
+  background: #f5f0e0;
+  color: #5a4a00;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border: 1px solid #d8c880;
+  border-radius: 2px;
+}
+
+/* ===== ABOUT — CASTLE LOCATIONS ===== */
+.castle-location-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 24px 18px;
+  text-align: center;
+  height: 100%;
+  transition: box-shadow 0.2s;
+}
+
+.castle-location-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.castle-location-icon {
+  font-size: 2rem;
+  color: #7b0000;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.castle-location-name {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.castle-location-desc {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== HOUSES ===== */
+.house-section {
+  padding: 52px 0;
+  border-bottom: 1px solid #e0d8c0;
+}
+
+.house-section:last-child {
+  border-bottom: none;
+}
+
+.house-section--gryffindor { background: #fff; }
+.house-section--slytherin  { background: #f5f9f6; }
+.house-section--ravenclaw  { background: #f5f7fb; }
+.house-section--hufflepuff { background: #fffdf0; }
+
+.house-color-bar {
+  height: 8px;
+  margin-bottom: 28px;
+}
+
+.house-color-bar--gryffindor { background: linear-gradient(to right, #740001, #d3a625); }
+.house-color-bar--slytherin  { background: linear-gradient(to right, #1a472a, #aaaaaa); }
+.house-color-bar--ravenclaw  { background: linear-gradient(to right, #0e1a40, #946b2d); }
+.house-color-bar--hufflepuff { background: linear-gradient(to right, #ecb939, #372e29); }
+
+.house-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.house-motto {
+  font-style: italic;
+  font-size: 0.88rem;
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.house-desc {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.75;
+}
+
+.house-traits-heading,
+.house-alumni-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #888;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.house-trait-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 2px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  margin: 3px 3px 3px 0;
+}
+
+.house-trait-badge--gryffindor { background: #fdf0f0; color: #740001; border: 1px solid #e0a0a0; }
+.house-trait-badge--slytherin  { background: #f0f7f2; color: #1a472a; border: 1px solid #a0c8a8; }
+.house-trait-badge--ravenclaw  { background: #f0f2f8; color: #0e1a40; border: 1px solid #a0aad0; }
+.house-trait-badge--hufflepuff { background: #fffaeb; color: #7a5c00; border: 1px solid #e0c870; }
+
+.house-alumni-badge {
+  display: inline-block;
+  background: #f7f4ed;
+  color: #444;
+  border: 1px solid #d8d0b8;
+  font-size: 0.8rem;
+  padding: 4px 12px;
+  margin: 3px 3px 3px 0;
+  border-radius: 2px;
+}
+
+/* ===== STAFF ===== */
+.headmaster-card {
+  background: #f7f4ed;
+  border: 1px solid #e0d8c0;
+  border-left: 6px solid #c8b87a;
+  padding: 28px;
+}
+
+.headmaster-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2a1a00;
+  margin-bottom: 4px;
+}
+
+.headmaster-title {
+  font-size: 0.88rem;
+  color: #7b0000;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+
+.headmaster-bio {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.staff-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.staff-portrait {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  background: #e0e0e0;
+  border-radius: 50%;
+  border: 2px solid #c8b87a;
+  margin-bottom: 12px;
+}
+
+.staff-name {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.staff-subject {
+  font-size: 0.75rem;
+  color: #7b0000;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  margin-bottom: 10px;
+}
+
+.staff-bio {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+/* ===== COURSES ===== */
+.course-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: 4px solid #c8b87a;
+  padding: 18px;
+  height: 100%;
+}
+
+.course-name {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.course-years {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background: #7b0000;
+  padding: 2px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.course-desc {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== ANNOUNCEMENTS ===== */
+.announcement-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px 22px;
+  margin-bottom: 16px;
+}
+
+.announcement-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.announcement-category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+
+.announcement-category--academic { background: #e8f0ff; color: #1a3a80; }
+.announcement-category--events   { background: #e8f5e9; color: #1a5c30; }
+.announcement-category--safety   { background: #fff3e0; color: #7a3800; }
+.announcement-category--sports   { background: #fce4ec; color: #7a0030; }
+
+.announcement-date {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.announcement-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.announcement-body {
+  font-size: 0.84rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.archive-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.84rem;
+}
+
+.archive-item:last-child {
+  border-bottom: none;
+}
+
+.archive-item-title {
+  color: #333;
+  font-weight: 500;
+}
+
+.archive-item-date {
+  font-size: 0.75rem;
+  color: #999;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+/* ===== EVENTS ===== */
+.event-item {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+
+.event-date-badge {
+  background: #7b0000;
+  color: #fff;
+  text-align: center;
+  min-width: 60px;
+  padding: 8px 10px;
+  flex-shrink: 0;
+}
+
+.event-date-day {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  display: block;
+}
+
+.event-date-month {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-top: 2px;
+}
+
+.event-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.event-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.event-location {
+  font-size: 0.78rem;
+  color: #7b0000;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.event-desc {
+  font-size: 0.83rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== ADMISSIONS ===== */
+.admissions-step {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 28px;
+  align-items: flex-start;
+}
+
+.step-number {
+  background: #c8b87a;
+  color: #2a1a00;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.step-body {
+  flex: 1;
+  min-width: 0;
+  padding-top: 6px;
+}
+
+.step-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.step-desc {
+  font-size: 0.84rem;
+  color: #555;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.supplies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.supplies-list li {
+  padding: 9px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.86rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.supplies-list li:last-child {
+  border-bottom: none;
+}
+
+.supplies-list li i {
+  color: #c8b87a;
+  flex-shrink: 0;
+}
+
+/* ===== INNER PAGE RESPONSIVE ===== */
+@media (max-width: 767.98px) {
+  .page-hero-title {
+    font-size: 1.5rem;
+  }
+
+  .inner-section {
+    padding: 36px 0;
+  }
+
+  .event-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .event-date-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+  }
+
+  .event-date-day {
+    font-size: 1.2rem;
+  }
+}
