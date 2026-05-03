@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Houses — Hogwarts School of Witchcraft and Wizardry</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="container-fluid px-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="top-bar-contact">
+          <i class="bi bi-envelope me-1"></i> headmaster@hogwarts.wiz
+        </span>
+        <nav class="top-bar-nav">
+          <a href="index.html"><i class="bi bi-house me-1"></i>Home</a>
+          <a href="#"><i class="bi bi-diagram-3 me-1"></i>Site Map</a>
+          <a href="#"><i class="bi bi-search me-1"></i>Search</a>
+          <a href="#"><i class="bi bi-envelope me-1"></i>Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="container-fluid px-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <img src="assets/images/hogwarts-crest.png" alt="Hogwarts School seal" class="header-crest" />
+          <div class="header-identity">
+            <span class="header-location">SCOTLAND / SCOTTISH HIGHLANDS</span>
+            <p class="header-school-name">Hogwarts School of Witchcraft and Wizardry</p>
+          </div>
+        </div>
+        <img src="assets/images/header-portrait.jpg" alt="Albus Dumbledore, Headmaster" class="header-portrait" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main navbar -->
+  <nav class="navbar navbar-expand-lg main-nav">
+    <div class="container-fluid px-4">
+      <a href="index.html" class="nav-home-icon" aria-label="Home">
+        <i class="bi bi-house-fill"></i>
+      </a>
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our School</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About &amp; History</a></li>
+              <li><a class="dropdown-item" href="about.html#founders">The Four Founders</a></li>
+              <li><a class="dropdown-item" href="about.html#castle">The Castle</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="houses.html">Houses</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academic Staff</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="staff.html">All Staff</a></li>
+              <li><a class="dropdown-item" href="staff.html#headmaster">Headmaster</a></li>
+              <li><a class="dropdown-item" href="staff.html#professors">Professors</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+              <li><a class="dropdown-item" href="courses.html#core">Core Subjects</a></li>
+              <li><a class="dropdown-item" href="courses.html#electives">Elective Subjects</a></li>
+              <li><a class="dropdown-item" href="courses.html#newts">N.E.W.T. Subjects</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="admissions.html">Admissions</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Announcements</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="announcements.html">Latest Notices</a></li>
+              <li><a class="dropdown-item" href="announcements.html#archive">Archive</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container-fluid px-4">
+        <h1 class="page-hero-title">The Four Houses</h1>
+        <p class="page-hero-subtitle">Every student is sorted into one of four houses — a home for the duration of their time at Hogwarts</p>
+      </div>
+    </section>
+
+    <!-- Gryffindor -->
+    <section id="gryffindor" class="house-section house-section--gryffindor">
+      <div class="container">
+        <div class="house-color-bar house-color-bar--gryffindor"></div>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-8">
+            <h2 class="house-name">Gryffindor</h2>
+            <p class="house-motto">"Where dwell the brave at heart, their daring, nerve, and chivalry set Gryffindors apart."</p>
+            <p class="house-desc">Founded by Godric Gryffindor, this house prizes courage, bravery, nerve, and chivalry. The Gryffindor common room is situated in Gryffindor Tower, accessible through a portrait of the Fat Lady. Students who display exceptional bravery and a willingness to stand up for what is right earn their place in this celebrated house.</p>
+            <div class="house-traits-heading">House Traits</div>
+            <div>
+              <span class="house-trait-badge house-trait-badge--gryffindor">Courage</span>
+              <span class="house-trait-badge house-trait-badge--gryffindor">Bravery</span>
+              <span class="house-trait-badge house-trait-badge--gryffindor">Nerve</span>
+              <span class="house-trait-badge house-trait-badge--gryffindor">Chivalry</span>
+              <span class="house-trait-badge house-trait-badge--gryffindor">Daring</span>
+            </div>
+            <div class="house-alumni-heading">Notable Alumni</div>
+            <div>
+              <span class="house-alumni-badge">Harry Potter</span>
+              <span class="house-alumni-badge">Hermione Granger</span>
+              <span class="house-alumni-badge">Ron Weasley</span>
+              <span class="house-alumni-badge">Albus Dumbledore</span>
+              <span class="house-alumni-badge">Minerva McGonagall</span>
+              <span class="house-alumni-badge">Neville Longbottom</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="history-sidebar">
+              <h3 class="sidebar-heading">House Details</h3>
+              <ul class="sidebar-list">
+                <li><i class="bi bi-palette me-2"></i>Colours: <strong>Scarlet &amp; Gold</strong></li>
+                <li><i class="bi bi-shield me-2"></i>Animal: <strong>Lion</strong></li>
+                <li><i class="bi bi-gem me-2"></i>Element: <strong>Fire</strong></li>
+                <li><i class="bi bi-door-open me-2"></i>Common Room: <strong>Gryffindor Tower</strong></li>
+                <li><i class="bi bi-person me-2"></i>Head of House: <strong>Prof. McGonagall</strong></li>
+                <li><i class="bi bi-ghost me-2"></i>House Ghost: <strong>Nearly Headless Nick</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slytherin -->
+    <section id="slytherin" class="house-section house-section--slytherin">
+      <div class="container">
+        <div class="house-color-bar house-color-bar--slytherin"></div>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-8">
+            <h2 class="house-name">Slytherin</h2>
+            <p class="house-motto">"Those cunning folk use any means to achieve their ends."</p>
+            <p class="house-desc">Founded by Salazar Slytherin, this house prizes ambition, cunning, leadership, and resourcefulness. The Slytherin common room lies beneath the Black Lake in the dungeons of the castle, giving it a distinctive greenish glow. Slytherin has a reputation for producing skilled witches and wizards who know how to get what they want.</p>
+            <div class="house-traits-heading">House Traits</div>
+            <div>
+              <span class="house-trait-badge house-trait-badge--slytherin">Ambition</span>
+              <span class="house-trait-badge house-trait-badge--slytherin">Cunning</span>
+              <span class="house-trait-badge house-trait-badge--slytherin">Leadership</span>
+              <span class="house-trait-badge house-trait-badge--slytherin">Resourcefulness</span>
+              <span class="house-trait-badge house-trait-badge--slytherin">Determination</span>
+            </div>
+            <div class="house-alumni-heading">Notable Alumni</div>
+            <div>
+              <span class="house-alumni-badge">Merlin</span>
+              <span class="house-alumni-badge">Severus Snape</span>
+              <span class="house-alumni-badge">Draco Malfoy</span>
+              <span class="house-alumni-badge">Horace Slughorn</span>
+              <span class="house-alumni-badge">Regulus Black</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="history-sidebar">
+              <h3 class="sidebar-heading">House Details</h3>
+              <ul class="sidebar-list">
+                <li><i class="bi bi-palette me-2"></i>Colours: <strong>Green &amp; Silver</strong></li>
+                <li><i class="bi bi-shield me-2"></i>Animal: <strong>Serpent</strong></li>
+                <li><i class="bi bi-gem me-2"></i>Element: <strong>Water</strong></li>
+                <li><i class="bi bi-door-open me-2"></i>Common Room: <strong>Slytherin Dungeons</strong></li>
+                <li><i class="bi bi-person me-2"></i>Head of House: <strong>Prof. Snape</strong></li>
+                <li><i class="bi bi-ghost me-2"></i>House Ghost: <strong>The Bloody Baron</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ravenclaw -->
+    <section id="ravenclaw" class="house-section house-section--ravenclaw">
+      <div class="container">
+        <div class="house-color-bar house-color-bar--ravenclaw"></div>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-8">
+            <h2 class="house-name">Ravenclaw</h2>
+            <p class="house-motto">"Wit beyond measure is man's greatest treasure."</p>
+            <p class="house-desc">Founded by Rowena Ravenclaw, this house prizes intelligence, wisdom, creativity, and originality. The Ravenclaw common room sits at the top of a tower on the west side of the castle and is notable for having a riddle-based entry mechanism rather than a password, reflecting the house's commitment to learning and intellectual challenge.</p>
+            <div class="house-traits-heading">House Traits</div>
+            <div>
+              <span class="house-trait-badge house-trait-badge--ravenclaw">Intelligence</span>
+              <span class="house-trait-badge house-trait-badge--ravenclaw">Wisdom</span>
+              <span class="house-trait-badge house-trait-badge--ravenclaw">Creativity</span>
+              <span class="house-trait-badge house-trait-badge--ravenclaw">Originality</span>
+              <span class="house-trait-badge house-trait-badge--ravenclaw">Wit</span>
+            </div>
+            <div class="house-alumni-heading">Notable Alumni</div>
+            <div>
+              <span class="house-alumni-badge">Luna Lovegood</span>
+              <span class="house-alumni-badge">Cho Chang</span>
+              <span class="house-alumni-badge">Filius Flitwick</span>
+              <span class="house-alumni-badge">Gilderoy Lockhart</span>
+              <span class="house-alumni-badge">Garrick Ollivander</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="history-sidebar">
+              <h3 class="sidebar-heading">House Details</h3>
+              <ul class="sidebar-list">
+                <li><i class="bi bi-palette me-2"></i>Colours: <strong>Blue &amp; Bronze</strong></li>
+                <li><i class="bi bi-shield me-2"></i>Animal: <strong>Eagle</strong></li>
+                <li><i class="bi bi-gem me-2"></i>Element: <strong>Air</strong></li>
+                <li><i class="bi bi-door-open me-2"></i>Common Room: <strong>Ravenclaw Tower</strong></li>
+                <li><i class="bi bi-person me-2"></i>Head of House: <strong>Prof. Flitwick</strong></li>
+                <li><i class="bi bi-ghost me-2"></i>House Ghost: <strong>The Grey Lady</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hufflepuff -->
+    <section id="hufflepuff" class="house-section house-section--hufflepuff">
+      <div class="container">
+        <div class="house-color-bar house-color-bar--hufflepuff"></div>
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-8">
+            <h2 class="house-name">Hufflepuff</h2>
+            <p class="house-motto">"Those patient Hufflepuffs are true and unafraid of toil."</p>
+            <p class="house-desc">Founded by Helga Hufflepuff, this house prizes hard work, patience, justice, loyalty, and fair play. The Hufflepuff common room is located near the kitchens, accessible through a barrel in a corridor. It is considered the most welcoming of all the houses and proudly accepts students who might not fit the specific virtues prized by the other three founders.</p>
+            <div class="house-traits-heading">House Traits</div>
+            <div>
+              <span class="house-trait-badge house-trait-badge--hufflepuff">Loyalty</span>
+              <span class="house-trait-badge house-trait-badge--hufflepuff">Hard Work</span>
+              <span class="house-trait-badge house-trait-badge--hufflepuff">Patience</span>
+              <span class="house-trait-badge house-trait-badge--hufflepuff">Fair Play</span>
+              <span class="house-trait-badge house-trait-badge--hufflepuff">Dedication</span>
+            </div>
+            <div class="house-alumni-heading">Notable Alumni</div>
+            <div>
+              <span class="house-alumni-badge">Cedric Diggory</span>
+              <span class="house-alumni-badge">Nymphadora Tonks</span>
+              <span class="house-alumni-badge">Pomona Sprout</span>
+              <span class="house-alumni-badge">Newton Scamander</span>
+              <span class="house-alumni-badge">Ernie Macmillan</span>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="history-sidebar">
+              <h3 class="sidebar-heading">House Details</h3>
+              <ul class="sidebar-list">
+                <li><i class="bi bi-palette me-2"></i>Colours: <strong>Yellow &amp; Black</strong></li>
+                <li><i class="bi bi-shield me-2"></i>Animal: <strong>Badger</strong></li>
+                <li><i class="bi bi-gem me-2"></i>Element: <strong>Earth</strong></li>
+                <li><i class="bi bi-door-open me-2"></i>Common Room: <strong>Near the Kitchens</strong></li>
+                <li><i class="bi bi-person me-2"></i>Head of House: <strong>Prof. Sprout</strong></li>
+                <li><i class="bi bi-ghost me-2"></i>House Ghost: <strong>The Fat Friar</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Hogwarts School</h6>
+          <p class="footer-text">Providing magical education since 990 A.D. Located in the Scottish Highlands.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="about.html">About &amp; History</a></li>
+            <li><a href="staff.html">Academic Staff</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="houses.html">Houses</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Contact</h6>
+          <p class="footer-text">
+            <i class="bi bi-envelope me-2"></i>headmaster@hogwarts.wiz<br />
+            <i class="bi bi-geo-alt me-2"></i>Scottish Highlands, Scotland
+          </p>
+        </div>
+
+      </div>
+      <hr class="footer-divider" />
+      <p class="footer-copy text-center mb-0">&copy; Hogwarts School of Witchcraft and Wizardry</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
