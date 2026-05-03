@@ -616,6 +616,12 @@ body {
   margin-bottom: 28px;
 }
 
+.house-logo {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
 .house-color-bar--gryffindor { background: linear-gradient(to right, #740001, #d3a625); }
 .house-color-bar--slytherin  { background: linear-gradient(to right, #1a472a, #aaaaaa); }
 .house-color-bar--ravenclaw  { background: linear-gradient(to right, #0e1a40, #946b2d); }
