@@ -188,7 +188,7 @@ body {
 
 /* Carousel caption */
 .slide-caption {
-  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
   left: 0;
   right: 0;
   bottom: 0;
@@ -200,13 +200,13 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 4px;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .slide-caption-text {
   font-size: 0.85rem;
   margin: 0;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Torn paper / zigzag edge at bottom of carousel */
@@ -517,10 +517,21 @@ body {
   height: 100%;
 }
 
-.founder-card--gryffindor { border-top-color: #740001; }
-.founder-card--slytherin  { border-top-color: #1a472a; }
-.founder-card--ravenclaw  { border-top-color: #0e1a40; }
-.founder-card--hufflepuff { border-top-color: #ecb939; }
+.founder-card--gryffindor {
+  border-top-color: #740001;
+}
+
+.founder-card--slytherin {
+  border-top-color: #1a472a;
+}
+
+.founder-card--ravenclaw {
+  border-top-color: #0e1a40;
+}
+
+.founder-card--hufflepuff {
+  border-top-color: #ecb939;
+}
 
 .founder-house-badge {
   font-size: 0.72rem;
@@ -606,10 +617,21 @@ body {
   border-bottom: none;
 }
 
-.house-section--gryffindor { background: #fff; }
-.house-section--slytherin  { background: #f5f9f6; }
-.house-section--ravenclaw  { background: #f5f7fb; }
-.house-section--hufflepuff { background: #fffdf0; }
+.house-section--gryffindor {
+  background: #fff;
+}
+
+.house-section--slytherin {
+  background: #f5f9f6;
+}
+
+.house-section--ravenclaw {
+  background: #f5f7fb;
+}
+
+.house-section--hufflepuff {
+  background: #fffdf0;
+}
 
 .house-color-bar {
   height: 8px;
@@ -622,10 +644,21 @@ body {
   object-fit: contain;
 }
 
-.house-color-bar--gryffindor { background: linear-gradient(to right, #740001, #d3a625); }
-.house-color-bar--slytherin  { background: linear-gradient(to right, #1a472a, #aaaaaa); }
-.house-color-bar--ravenclaw  { background: linear-gradient(to right, #0e1a40, #946b2d); }
-.house-color-bar--hufflepuff { background: linear-gradient(to right, #ecb939, #372e29); }
+.house-color-bar--gryffindor {
+  background: linear-gradient(to right, #740001, #d3a625);
+}
+
+.house-color-bar--slytherin {
+  background: linear-gradient(to right, #1a472a, #aaaaaa);
+}
+
+.house-color-bar--ravenclaw {
+  background: linear-gradient(to right, #0e1a40, #946b2d);
+}
+
+.house-color-bar--hufflepuff {
+  background: linear-gradient(to right, #ecb939, #372e29);
+}
 
 .house-name {
   font-size: 1.7rem;
@@ -667,10 +700,29 @@ body {
   margin: 3px 3px 3px 0;
 }
 
-.house-trait-badge--gryffindor { background: #fdf0f0; color: #740001; border: 1px solid #e0a0a0; }
-.house-trait-badge--slytherin  { background: #f0f7f2; color: #1a472a; border: 1px solid #a0c8a8; }
-.house-trait-badge--ravenclaw  { background: #f0f2f8; color: #0e1a40; border: 1px solid #a0aad0; }
-.house-trait-badge--hufflepuff { background: #fffaeb; color: #7a5c00; border: 1px solid #e0c870; }
+.house-trait-badge--gryffindor {
+  background: #fdf0f0;
+  color: #740001;
+  border: 1px solid #e0a0a0;
+}
+
+.house-trait-badge--slytherin {
+  background: #f0f7f2;
+  color: #1a472a;
+  border: 1px solid #a0c8a8;
+}
+
+.house-trait-badge--ravenclaw {
+  background: #f0f2f8;
+  color: #0e1a40;
+  border: 1px solid #a0aad0;
+}
+
+.house-trait-badge--hufflepuff {
+  background: #fffaeb;
+  color: #7a5c00;
+  border: 1px solid #e0c870;
+}
 
 .house-alumni-badge {
   display: inline-block;
@@ -724,7 +776,7 @@ body {
 
 .staff-portrait {
   width: 100%;
-  height: 320px;
+  height: 420px;
   object-fit: cover;
   object-position: top center;
   background: #e0e0e0;
@@ -821,10 +873,25 @@ body {
   border-radius: 2px;
 }
 
-.announcement-category--academic { background: #e8f0ff; color: #1a3a80; }
-.announcement-category--events   { background: #e8f5e9; color: #1a5c30; }
-.announcement-category--safety   { background: #fff3e0; color: #7a3800; }
-.announcement-category--sports   { background: #fce4ec; color: #7a0030; }
+.announcement-category--academic {
+  background: #e8f0ff;
+  color: #1a3a80;
+}
+
+.announcement-category--events {
+  background: #e8f5e9;
+  color: #1a5c30;
+}
+
+.announcement-category--safety {
+  background: #fff3e0;
+  color: #7a3800;
+}
+
+.announcement-category--sports {
+  background: #fce4ec;
+  color: #7a0030;
+}
 
 .announcement-date {
   font-size: 0.75rem;
