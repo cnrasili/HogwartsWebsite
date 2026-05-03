@@ -1,0 +1,19 @@
+# Project plan (internal — not for public repository)
+HOGWARTS_PROJECT_PLAN.md
+
+# AI tooling
+.claude/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
