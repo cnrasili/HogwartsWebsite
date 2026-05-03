@@ -181,10 +181,32 @@ body {
 }
 
 .carousel-img {
-  height: 350px;
+  height: 500px;
   object-fit: cover;
-  /* Shown as gray box until images are added */
   background: #ccc;
+}
+
+/* Carousel caption */
+.slide-caption {
+  background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 100%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: left;
+  padding: 28px 24px 18px;
+}
+
+.slide-caption-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+}
+
+.slide-caption-text {
+  font-size: 0.85rem;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 /* Torn paper / zigzag edge at bottom of carousel */
@@ -377,7 +399,7 @@ body {
   }
 
   .carousel-img {
-    height: 240px;
+    height: 320px;
   }
 }
 
