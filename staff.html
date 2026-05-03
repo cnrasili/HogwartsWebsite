@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Staff — Hogwarts School of Witchcraft and Wizardry</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="container-fluid px-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <span class="top-bar-contact">
+          <i class="bi bi-envelope me-1"></i> headmaster@hogwarts.wiz
+        </span>
+        <nav class="top-bar-nav">
+          <a href="index.html"><i class="bi bi-house me-1"></i>Home</a>
+          <a href="#"><i class="bi bi-diagram-3 me-1"></i>Site Map</a>
+          <a href="#"><i class="bi bi-search me-1"></i>Search</a>
+          <a href="#"><i class="bi bi-envelope me-1"></i>Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site header -->
+  <header class="site-header">
+    <div class="container-fluid px-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-3">
+          <img src="assets/images/hogwarts-crest.png" alt="Hogwarts School seal" class="header-crest" />
+          <div class="header-identity">
+            <span class="header-location">SCOTLAND / SCOTTISH HIGHLANDS</span>
+            <p class="header-school-name">Hogwarts School of Witchcraft and Wizardry</p>
+          </div>
+        </div>
+        <img src="assets/images/header-portrait.jpg" alt="Albus Dumbledore, Headmaster" class="header-portrait" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main navbar -->
+  <nav class="navbar navbar-expand-lg main-nav">
+    <div class="container-fluid px-4">
+      <a href="index.html" class="nav-home-icon" aria-label="Home">
+        <i class="bi bi-house-fill"></i>
+      </a>
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our School</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About &amp; History</a></li>
+              <li><a class="dropdown-item" href="about.html#founders">The Four Founders</a></li>
+              <li><a class="dropdown-item" href="about.html#castle">The Castle</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="houses.html">Houses</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Academic Staff</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="staff.html">All Staff</a></li>
+              <li><a class="dropdown-item" href="staff.html#headmaster">Headmaster</a></li>
+              <li><a class="dropdown-item" href="staff.html#professors">Professors</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="courses.html">All Courses</a></li>
+              <li><a class="dropdown-item" href="courses.html#core">Core Subjects</a></li>
+              <li><a class="dropdown-item" href="courses.html#electives">Elective Subjects</a></li>
+              <li><a class="dropdown-item" href="courses.html#newts">N.E.W.T. Subjects</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="admissions.html">Admissions</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Announcements</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="announcements.html">Latest Notices</a></li>
+              <li><a class="dropdown-item" href="announcements.html#archive">Archive</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Page hero -->
+    <section class="page-hero">
+      <div class="container-fluid px-4">
+        <h1 class="page-hero-title">Academic Staff</h1>
+        <p class="page-hero-subtitle">The witches and wizards dedicated to shaping the next generation of magical talent</p>
+      </div>
+    </section>
+
+    <!-- Headmaster -->
+    <section id="headmaster" class="inner-section">
+      <div class="container">
+        <h2 class="section-heading">Headmaster</h2>
+        <div class="headmaster-card">
+          <div class="row g-4 align-items-center">
+            <div class="col-auto">
+              <img src="assets/images/staff-dumbledore.jpg" alt="Professor Albus Dumbledore" class="staff-portrait" style="width:100px;height:100px;" />
+            </div>
+            <div class="col">
+              <p class="headmaster-name">Professor Albus Percival Wulfric Brian Dumbledore</p>
+              <p class="headmaster-title">Headmaster of Hogwarts — Order of Merlin, First Class</p>
+              <p class="headmaster-bio">Widely considered the greatest wizard of his age, Albus Dumbledore served as Headmaster of Hogwarts for several decades following his tenure as Transfiguration professor. A former student of Hogwarts himself, he is celebrated for his defeat of the Dark wizard Grindelwald in 1945, his twelve uses of dragon's blood, and his work on alchemy with Nicolas Flamel. He is also a member of the International Confederation of Wizards and a former Supreme Mugwump of the International Confederation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professors -->
+    <section id="professors" class="inner-section inner-section--alt">
+      <div class="container">
+        <h2 class="section-heading">Professors</h2>
+        <div class="row g-4">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-mcgonagall.jpg" alt="Professor Minerva McGonagall" class="staff-portrait" />
+              <p class="staff-name">Professor Minerva McGonagall</p>
+              <p class="staff-subject">Transfiguration &amp; Deputy Headmistress</p>
+              <p class="staff-bio">An Animagus who can transform into a tabby cat, Professor McGonagall is one of the most accomplished Transfiguration practitioners in the world. She is also Head of Gryffindor House and Deputy Headmistress, known for her strict but fair approach to discipline.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-snape.jpg" alt="Professor Severus Snape" class="staff-portrait" />
+              <p class="staff-name">Professor Severus Snape</p>
+              <p class="staff-subject">Potions</p>
+              <p class="staff-bio">Head of Slytherin House and a potions master of exceptional skill, Professor Snape is the author of many advances in the field. A former student of Hogwarts himself, he joined the teaching staff shortly after completing his studies and has since become the school's most demanding instructor.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-flitwick.jpg" alt="Professor Filius Flitwick" class="staff-portrait" />
+              <p class="staff-name">Professor Filius Flitwick</p>
+              <p class="staff-subject">Charms</p>
+              <p class="staff-bio">Head of Ravenclaw House, Professor Flitwick is a former duelling champion and one of the most skilled Charms practitioners in Britain. Despite his diminutive stature, his magical ability and enthusiasm for the subject make him one of the most popular teachers at Hogwarts.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-sprout.jpg" alt="Professor Pomona Sprout" class="staff-portrait" />
+              <p class="staff-name">Professor Pomona Sprout</p>
+              <p class="staff-subject">Herbology</p>
+              <p class="staff-bio">Head of Hufflepuff House, Professor Sprout runs the school greenhouses with boundless energy and expertise. She is the foremost authority on magical plants at Hogwarts and has contributed significantly to the school's knowledge of Mandrakes and Devil's Snare, among many other specimens.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-hagrid.jpg" alt="Professor Rubeus Hagrid" class="staff-portrait" />
+              <p class="staff-name">Professor Rubeus Hagrid</p>
+              <p class="staff-subject">Care of Magical Creatures</p>
+              <p class="staff-bio">Hogwarts' gamekeeper for many years before taking on the Care of Magical Creatures post, Hagrid is deeply knowledgeable about magical beasts of all kinds. His enthusiasm sometimes leads him to underestimate the danger of certain creatures, but his love for them is entirely genuine.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-trelawney.jpg" alt="Professor Sybill Trelawney" class="staff-portrait" />
+              <p class="staff-name">Professor Sybill Trelawney</p>
+              <p class="staff-subject">Divination</p>
+              <p class="staff-bio">A great-great-granddaughter of the celebrated Seer Cassandra Trelawney, Professor Trelawney teaches Divination from the North Tower. Her teaching style is atmospheric and intense, though her predictions are viewed with varying degrees of scepticism by students and staff alike.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-binns.jpg" alt="Professor Cuthbert Binns" class="staff-portrait" />
+              <p class="staff-name">Professor Cuthbert Binns</p>
+              <p class="staff-subject">History of Magic</p>
+              <p class="staff-bio">The only ghost on the Hogwarts teaching staff, Professor Binns is believed to have simply got up to teach one day and left his body behind. His lectures are extraordinarily detailed but delivered in a monotone that most students find difficult to stay awake through.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-vector.jpg" alt="Professor Septima Vector" class="staff-portrait" />
+              <p class="staff-name">Professor Septima Vector</p>
+              <p class="staff-subject">Arithmancy</p>
+              <p class="staff-bio">Professor Vector teaches Arithmancy, the study of the magical properties of numbers and their use in predicting the future. The subject is considered highly demanding and is taught only at O.W.L. level and above. Her classes are popular with ambitious students seeking to diversify their magical skills.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="staff-card">
+              <img src="assets/images/staff-hooch.jpg" alt="Madam Rolanda Hooch" class="staff-portrait" />
+              <p class="staff-name">Madam Rolanda Hooch</p>
+              <p class="staff-subject">Flying &amp; Quidditch Referee</p>
+              <p class="staff-bio">Madam Hooch teaches first-year students to fly and serves as the official referee for all Hogwarts Quidditch matches. She has hawk-like yellow eyes and a broom she can manoeuvre with extraordinary precision. She trained at the Quidditch Academy of Excellence in her youth.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Hogwarts School</h6>
+          <p class="footer-text">Providing magical education since 990 A.D. Located in the Scottish Highlands.</p>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="footer-links list-unstyled">
+            <li><a href="about.html">About &amp; History</a></li>
+            <li><a href="staff.html">Academic Staff</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="houses.html">Houses</a></li>
+            <li><a href="announcements.html">Announcements</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h6 class="footer-heading">Contact</h6>
+          <p class="footer-text">
+            <i class="bi bi-envelope me-2"></i>headmaster@hogwarts.wiz<br />
+            <i class="bi bi-geo-alt me-2"></i>Scottish Highlands, Scotland
+          </p>
+        </div>
+
+      </div>
+      <hr class="footer-divider" />
+      <p class="footer-copy text-center mb-0">&copy; Hogwarts School of Witchcraft and Wizardry</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
