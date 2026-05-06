@@ -305,29 +305,58 @@ body {
   border-bottom: 2px solid #b8a560;
 }
 
-.quick-link-item {
-  display: flex;
-  align-items: center;
-  padding: 15px 20px;
+.quick-link-group {
   border: 1px solid #ddd;
   border-top: none;
   background: #fff;
-  text-decoration: none;
-  color: #444;
-  font-size: 0.88rem;
-  font-weight: 500;
-  transition: background 0.15s;
+  height: 100%;
 }
 
-.quick-link-item:hover {
+.quick-link-heading {
+  padding: 13px 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #3a3000;
+  border-bottom: 1px solid #e8e0cc;
+  background: #faf6ec;
+}
+
+.quick-link-heading i {
+  color: #7b0000;
+  margin-right: 6px;
+  font-size: 0.8rem;
+}
+
+.quick-link-sublist {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.quick-link-sublist li a {
+  display: block;
+  padding: 6px 20px 6px 32px;
+  font-size: 0.84rem;
+  color: #555;
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
+  position: relative;
+}
+
+.quick-link-sublist li a::before {
+  content: '›';
+  position: absolute;
+  left: 18px;
+  color: #7b0000;
+  font-size: 1rem;
+  line-height: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.quick-link-sublist li a:hover {
   background: #f5f0e0;
   color: #333;
-}
-
-.quick-link-item i {
-  color: #7b0000;
-  margin-right: 8px;
-  font-size: 0.8rem;
 }
 
 /* ===== FOOTER ===== */
