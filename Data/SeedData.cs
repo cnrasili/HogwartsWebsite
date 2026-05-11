@@ -262,7 +262,7 @@ public static class SeedData
             new Course { Name = "Gobstones Club", Description = "Competitive Gobstones play. Open to all year groups. Meetings are held in the Hogwarts grounds on weekends.", YearLevels = "Years 1–7", Category = "Extra-Curricular" },
             new Course { Name = "Wizard Chess Club", Description = "Strategic wizard chess competition. Open to all years. Regular inter-house tournaments are organised by the club captain.", YearLevels = "Years 1–7", Category = "Extra-Curricular" },
             new Course { Name = "Frog Choir", Description = "A vocal ensemble accompanied by trained Frog Instruments. Open to all students with an interest in magical music.", YearLevels = "Years 1–7", Category = "Extra-Curricular" },
-            new Course { Name = "Hogwarts orchestra", Description = "An instrumental ensemble open to students with prior musical ability. Performs at school feasts and special events.", YearLevels = "Years 1–7", Category = "Extra-Curricular" }
+            new Course { Name = "Hogwarts Orchestra", Description = "An instrumental ensemble open to students with prior musical ability. Performs at school feasts and special events.", YearLevels = "Years 1–7", Category = "Extra-Curricular" }
         );
 
         db.SaveChanges();

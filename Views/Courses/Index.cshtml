@@ -1,6 +1,5 @@
-@model IEnumerable<HogwartsWebsite.Models.Course>
+@model IEnumerable<Course>
 @{
-    Layout = "_Layout";
     var core = Model.Where(c => c.Category == "Core");
     var electives = Model.Where(c => c.Category == "Elective");
     var advanced = Model.Where(c => c.Category == "Advanced Elective");

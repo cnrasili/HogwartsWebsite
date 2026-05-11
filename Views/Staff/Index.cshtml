@@ -1,6 +1,5 @@
-@model IEnumerable<HogwartsWebsite.Models.StaffMember>
+@model IEnumerable<StaffMember>
 @{
-    Layout = "_Layout";
     var headmaster = Model.FirstOrDefault(s => s.IsHeadmaster);
     var professors = Model.Where(s => !s.IsHeadmaster);
 }

@@ -1,6 +1,5 @@
-@model IEnumerable<HogwartsWebsite.Models.Announcement>
+@model IEnumerable<Announcement>
 @{
-    Layout = "_Layout";
     var notices = Model.Take(6);
     var archive = Model.Skip(6);
 }
