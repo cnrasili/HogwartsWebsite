@@ -1,12 +1,13 @@
 # Hogwarts School of Witchcraft and Wizardry — Official Website
 
-A static institutional website for Hogwarts School, built as if the school were a real-world educational institution. Presents the school's history, academic staff, courses, houses, announcements, and events.
+An institutional website for Hogwarts School, built as if the school were a real-world educational institution. Presents the school's history, academic staff, courses, houses, announcements, and events.
 
 ## Technology Stack
 
 | Layer | Technology |
 |---|---|
-| Markup | HTML5 (semantic elements) |
+| Framework | ASP.NET Core MVC (.NET 10) |
+| Database | SQLite via Entity Framework Core 10 |
 | Styling | CSS3 + Bootstrap 5 (CDN) |
 | Icons | Bootstrap Icons (CDN) |
 | Interactivity | Vanilla JavaScript |
@@ -14,45 +15,47 @@ A static institutional website for Hogwarts School, built as if the school were 
 
 ## Pages
 
-| Page | File |
+| Page | Route |
 |---|---|
-| Home | `index.html` |
-| About & History | `about.html` |
-| Houses | `houses.html` |
-| Academic Staff | `staff.html` |
-| Courses | `courses.html` |
-| Announcements | `announcements.html` |
-| Events | `events.html` |
-| Admissions | `admissions.html` |
+| Home | `/` |
+| About & History | `/About` |
+| Houses | `/Houses` |
+| Academic Staff | `/Staff` |
+| Courses | `/Courses` |
+| Announcements | `/Announcements` |
+| Events | `/Events` |
+| Admissions | `/Admissions` |
 
 ## Project Structure
 
 ```
-hogwarts-website/
-├── index.html
-├── about.html
-├── houses.html
-├── staff.html
-├── courses.html
-├── announcements.html
-├── events.html
-├── admissions.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-├── assets/
+HogwartsWebsite/
+├── Controllers/
+├── Data/
+│   ├── AppDbContext.cs
+│   └── SeedData.cs
+├── Migrations/
+├── Models/
+├── Views/
+│   └── Shared/
+├── wwwroot/
+│   ├── css/
+│   ├── js/
 │   └── images/
-└── .gitignore
+├── Program.cs
+├── appsettings.json
+└── HogwartsWebsite.csproj
 ```
 
 ## Running Locally
 
-This is a static site — no build step required. Open any `.html` file directly in a browser, or serve with any local HTTP server:
+Requires [.NET 10 SDK](https://dotnet.microsoft.com/download).
 
 ```
-npx serve .
+dotnet run
 ```
+
+The app starts at `http://localhost:5016`. The database is created and seeded automatically on first run.
 
 ## License
 
