@@ -1,0 +1,117 @@
+@model IEnumerable<HogwartsWebsite.Models.Course>
+@{
+    Layout = "_Layout";
+    var core = Model.Where(c => c.Category == "Core");
+    var electives = Model.Where(c => c.Category == "Elective");
+    var advanced = Model.Where(c => c.Category == "Advanced Elective");
+    var other = Model.Where(c => c.Category == "Other");
+    var extra = Model.Where(c => c.Category == "Extra-Curricular");
+}
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="container-fluid px-4">
+    <h1 class="page-hero-title">Courses</h1>
+    <p class="page-hero-subtitle">The full curriculum of magical subjects offered at Hogwarts School of Witchcraft and Wizardry</p>
+  </div>
+</section>
+
+<!-- Core subjects -->
+<section id="core" class="inner-section">
+  <div class="container">
+    <h2 class="section-heading">Core Subjects</h2>
+    <p class="section-lead">Compulsory subjects studied by all students in Years 1 through 5, with options to continue to O.W.L. and N.E.W.T. level.</p>
+    <div class="row g-4">
+      @foreach (var course in core)
+      {
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <p class="course-name">@course.Name</p>
+            <p class="course-years">@course.YearLevels</p>
+            <p class="course-desc">@course.Description</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Elective subjects -->
+<section id="electives" class="inner-section inner-section--alt">
+  <div class="container">
+    <h2 class="section-heading">Elective Subjects</h2>
+    <p class="section-lead">Available from Year 3. Students select a minimum of two electives in addition to their core subjects.</p>
+    <div class="row g-4">
+      @foreach (var course in electives)
+      {
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <p class="course-name">@course.Name</p>
+            <p class="course-years">@course.YearLevels</p>
+            <p class="course-desc">@course.Description</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Advanced electives -->
+<section id="electives-advanced" class="inner-section">
+  <div class="container">
+    <h2 class="section-heading">Advanced Electives</h2>
+    <p class="section-lead">N.E.W.T.-level electives available to sixth and seventh year students who meet the prerequisites.</p>
+    <div class="row g-4">
+      @foreach (var course in advanced)
+      {
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <p class="course-name">@course.Name</p>
+            <p class="course-years">@course.YearLevels</p>
+            <p class="course-desc">@course.Description</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Other classes -->
+<section id="other" class="inner-section inner-section--alt">
+  <div class="container">
+    <h2 class="section-heading">Other Classes</h2>
+    <p class="section-lead">Specialist instruction offered on a periodic or age-restricted basis.</p>
+    <div class="row g-4">
+      @foreach (var course in other)
+      {
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <p class="course-name">@course.Name</p>
+            <p class="course-years">@course.YearLevels</p>
+            <p class="course-desc">@course.Description</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Extra-curricular -->
+<section id="extracurricular" class="inner-section">
+  <div class="container">
+    <h2 class="section-heading">Extra-Curricular Activities</h2>
+    <p class="section-lead">Student activities and clubs operating alongside the academic timetable. Participation is voluntary and open to all eligible year groups.</p>
+    <div class="row g-4">
+      @foreach (var course in extra)
+      {
+        <div class="col-md-6 col-lg-4">
+          <div class="course-card">
+            <p class="course-name">@course.Name</p>
+            <p class="course-years">@course.YearLevels</p>
+            <p class="course-desc">@course.Description</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

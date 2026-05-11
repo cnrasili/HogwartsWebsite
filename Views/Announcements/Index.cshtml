@@ -1,0 +1,50 @@
+@model IEnumerable<HogwartsWebsite.Models.Announcement>
+@{
+    Layout = "_Layout";
+    var notices = Model.Take(6);
+    var archive = Model.Skip(6);
+}
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="container-fluid px-4">
+    <h1 class="page-hero-title">Announcements</h1>
+    <p class="page-hero-subtitle">Official notices and school news for students, staff, and the wizarding community</p>
+  </div>
+</section>
+
+<!-- Latest notices -->
+<section id="notices" class="inner-section">
+  <div class="container">
+    <h2 class="section-heading">Latest Notices</h2>
+    @foreach (var item in notices)
+    {
+      <div class="announcement-card">
+        <div class="announcement-meta">
+          <span class="announcement-category announcement-category--@item.Category.ToLower()">@item.Category</span>
+          <span class="announcement-date"><i class="bi bi-calendar3 me-1"></i>@item.PublishedDate.ToString("dd MMM yyyy")</span>
+        </div>
+        <p class="announcement-title">@item.Title</p>
+        <p class="announcement-body">@item.Body</p>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- Archive -->
+@if (archive.Any())
+{
+  <section id="archive" class="inner-section inner-section--alt">
+    <div class="container">
+      <h2 class="section-heading">Archive</h2>
+      <p class="section-lead">Previous announcements from earlier in the academic year.</p>
+      @foreach (var item in archive)
+      {
+        <div class="archive-item">
+          <span class="archive-item-title">@item.Title</span>
+          <span class="archive-item-date">@item.PublishedDate.ToString("dd MMM yyyy")</span>
+        </div>
+      }
+    </div>
+  </section>
+}

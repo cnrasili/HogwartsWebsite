@@ -1,0 +1,77 @@
+@model IEnumerable<HogwartsWebsite.Models.StaffMember>
+@{
+    Layout = "_Layout";
+    var headmaster = Model.FirstOrDefault(s => s.IsHeadmaster);
+    var professors = Model.Where(s => !s.IsHeadmaster);
+}
+
+@section HeaderPortrait {
+  @if (headmaster?.PhotoPath != null)
+  {
+    <img src="~/assets/images/@headmaster.PhotoPath" alt="@headmaster.FullName, Headmaster" class="header-portrait" />
+  }
+}
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="container-fluid px-4">
+    <h1 class="page-hero-title">Academic Staff</h1>
+    <p class="page-hero-subtitle">The witches and wizards dedicated to shaping the next generation of magical talent</p>
+  </div>
+</section>
+
+<!-- Headmaster -->
+<section id="headmaster" class="inner-section">
+  <div class="container">
+    <h2 class="section-heading">Headmaster</h2>
+    @if (headmaster != null)
+    {
+      <div class="headmaster-card">
+        <div class="row g-4 align-items-center">
+          <div class="col-auto">
+            @if (headmaster.PhotoPath != null)
+            {
+              <img src="~/assets/images/@headmaster.PhotoPath" alt="Professor @headmaster.FullName" class="staff-portrait headmaster-portrait" />
+            }
+          </div>
+          <div class="col">
+            <p class="headmaster-name">Professor @headmaster.FullName</p>
+            <p class="headmaster-title">Headmaster of Hogwarts — Order of Merlin, First Class</p>
+            <p class="headmaster-bio">@headmaster.Bio</p>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- Professors -->
+<section id="professors" class="inner-section inner-section--alt">
+  <div class="container">
+    <h2 class="section-heading">Professors</h2>
+    <div class="row g-4">
+      @foreach (var member in professors)
+      {
+        <div class="col-md-6 col-lg-4">
+          <div class="staff-card">
+            @if (member.PhotoPath != null)
+            {
+              <img src="~/assets/images/@member.PhotoPath" alt="@member.Title @member.FullName" class="staff-portrait" />
+            }
+            else
+            {
+              <div class="staff-portrait staff-portrait--no-image" aria-label="No photograph available">
+                <i class="bi bi-person-fill"></i>
+              </div>
+            }
+            <div class="staff-card-body">
+              <p class="staff-name">@member.Title @member.FullName</p>
+              <p class="staff-subject">@member.Subject</p>
+              <p class="staff-bio">@member.Bio</p>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

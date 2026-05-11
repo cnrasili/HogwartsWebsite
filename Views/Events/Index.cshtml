@@ -1,0 +1,33 @@
+@model IEnumerable<HogwartsWebsite.Models.SchoolEvent>
+@{
+    Layout = "_Layout";
+}
+
+<!-- Page hero -->
+<section class="page-hero">
+  <div class="container-fluid px-4">
+    <h1 class="page-hero-title">Upcoming Events</h1>
+    <p class="page-hero-subtitle">Ceremonies, matches, feasts, and examinations across the academic year</p>
+  </div>
+</section>
+
+<!-- Events -->
+<section id="events" class="inner-section">
+  <div class="container">
+    <h2 class="section-heading">Academic Year 2025 – 2026</h2>
+    @foreach (var ev in Model)
+    {
+      <div class="event-item">
+        <div class="event-date-badge">
+          <span class="event-date-day">@ev.EventDate.ToString("dd")</span>
+          <span class="event-date-month">@ev.EventDate.ToString("MMM")</span>
+        </div>
+        <div class="event-body">
+          <p class="event-name">@ev.Title</p>
+          <p class="event-location"><i class="bi bi-geo-alt me-1"></i>@ev.Location</p>
+          <p class="event-desc">@ev.Description</p>
+        </div>
+      </div>
+    }
+  </div>
+</section>

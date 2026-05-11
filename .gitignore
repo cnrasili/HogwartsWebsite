@@ -18,3 +18,12 @@ desktop.ini
 
 # Logs
 *.log
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# .NET build output
+bin/
+obj/
