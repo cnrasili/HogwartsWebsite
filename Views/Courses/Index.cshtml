@@ -5,6 +5,7 @@
     var advanced = Model.Where(c => c.Category == "Advanced Elective");
     var other = Model.Where(c => c.Category == "Other");
     var extra = Model.Where(c => c.Category == "Extra-Curricular");
+    var instructors = ViewData["Instructors"] as Dictionary<string, string> ?? new();
 }
 
 <!-- Page hero -->
@@ -27,6 +28,10 @@
           <div class="course-card">
             <p class="course-name">@course.Name</p>
             <p class="course-years">@course.YearLevels</p>
+            @if (instructors.TryGetValue(course.Name, out var instructor))
+            {
+              <p class="course-instructor">@instructor</p>
+            }
             <p class="course-desc">@course.Description</p>
           </div>
         </div>
@@ -47,6 +52,10 @@
           <div class="course-card">
             <p class="course-name">@course.Name</p>
             <p class="course-years">@course.YearLevels</p>
+            @if (instructors.TryGetValue(course.Name, out var instructor))
+            {
+              <p class="course-instructor">@instructor</p>
+            }
             <p class="course-desc">@course.Description</p>
           </div>
         </div>
@@ -67,6 +76,10 @@
           <div class="course-card">
             <p class="course-name">@course.Name</p>
             <p class="course-years">@course.YearLevels</p>
+            @if (instructors.TryGetValue(course.Name, out var instructor))
+            {
+              <p class="course-instructor">@instructor</p>
+            }
             <p class="course-desc">@course.Description</p>
           </div>
         </div>
@@ -87,6 +100,10 @@
           <div class="course-card">
             <p class="course-name">@course.Name</p>
             <p class="course-years">@course.YearLevels</p>
+            @if (instructors.TryGetValue(course.Name, out var instructor))
+            {
+              <p class="course-instructor">@instructor</p>
+            }
             <p class="course-desc">@course.Description</p>
           </div>
         </div>
@@ -107,6 +124,10 @@
           <div class="course-card">
             <p class="course-name">@course.Name</p>
             <p class="course-years">@course.YearLevels</p>
+            @if (instructors.TryGetValue(course.Name, out var instructor))
+            {
+              <p class="course-instructor">@instructor</p>
+            }
             <p class="course-desc">@course.Description</p>
           </div>
         </div>

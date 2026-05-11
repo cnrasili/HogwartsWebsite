@@ -972,6 +972,13 @@ body {
   margin-bottom: 10px;
 }
 
+.course-instructor {
+  font-size: 0.78rem;
+  color: #7b0000;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
 .course-desc {
   font-size: 0.82rem;
   color: #666;
