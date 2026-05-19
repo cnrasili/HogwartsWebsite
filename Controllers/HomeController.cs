@@ -11,6 +11,13 @@ public class HomeController : Controller
 
     public HomeController(AppDbContext db) => _db = db;
 
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult Error()
+    {
+        ViewData["Title"] = "Error";
+        return View();
+    }
+
     // Fetches 3 latest announcements + 3 upcoming events for home page
     public async Task<IActionResult> Index()
     {

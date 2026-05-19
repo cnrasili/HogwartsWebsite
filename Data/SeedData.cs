@@ -59,6 +59,63 @@ public static class SeedData
                 Body = "The next scheduled Hogsmeade weekend will take place on 31 October 2026. Third-year students and above are reminded that they must have a signed permission form on file with their Head of House before they may leave school grounds. Permission forms are available from the school office. Students who have not yet submitted forms should do so by 24 October 2026. Students will depart from the Entrance Hall at 10:00 and must return no later than 17:30.",
                 Category = "Events",
                 PublishedDate = new DateTime(2026, 4, 8)
+            },
+            // Archive announcements
+            new Announcement
+            {
+                Title = "House Cup Standings Updated After Easter Break",
+                Body = "The House Cup points tally has been updated following the Easter holiday period. Points awarded and deducted during revision sessions and unsupervised common room periods have been tallied by the relevant Heads of House. The updated standings are posted on each house noticeboard. Students are reminded that points may still be gained or lost before the End of Year Feast.",
+                Category = "Academic",
+                PublishedDate = new DateTime(2026, 4, 1)
+            },
+            new Announcement
+            {
+                Title = "Mandatory Safety Briefing for All Years",
+                Body = "All students are required to attend a mandatory safety briefing to be held in the Great Hall on the first Thursday back from Easter break. The briefing will cover emergency procedures, restricted areas, and protocols when encountering potentially dangerous magical creatures or artefacts on school grounds. Attendance will be taken. Students who cannot attend due to illness must arrange an alternative session with their Head of House.",
+                Category = "Safety",
+                PublishedDate = new DateTime(2026, 3, 28)
+            },
+            new Announcement
+            {
+                Title = "Library Extended Hours During Examination Revision Period",
+                Body = "The Hogwarts Library will offer extended opening hours from 1 April through to the end of the O.W.L. examination period. The library will remain open until 22:00 on weekdays and 20:00 on weekends. Madam Pince asks that all students maintain strict silence in the reading rooms and handle all volumes with care. No food or drink is permitted inside the library at any time.",
+                Category = "Academic",
+                PublishedDate = new DateTime(2026, 3, 15)
+            },
+            new Announcement
+            {
+                Title = "Potions Classroom 3 Temporarily Out of Service",
+                Body = "Potions Classroom 3 in the dungeons is temporarily closed following an incident during a sixth-year practical session. Students assigned to Classroom 3 will be relocated to Classroom 1 for the duration of repairs. Professor Snape has adjusted the timetable accordingly; students should check their updated schedules posted outside the Potions department. The classroom is expected to reopen within two weeks.",
+                Category = "Safety",
+                PublishedDate = new DateTime(2026, 2, 20)
+            },
+            new Announcement
+            {
+                Title = "Valentine's Day Feast — Seating Arrangements",
+                Body = "Seating for the Valentine's Day Feast will be arranged by year group rather than house. Students are asked to report to the Great Hall at 18:30. Owl-delivered flowers and cards will be distributed during the starter course. Students wishing to send owl post for Valentine's Day should do so by 12 February to ensure timely delivery. The feast concludes at 21:00; all students must return to their common rooms by 21:30.",
+                Category = "Events",
+                PublishedDate = new DateTime(2026, 2, 10)
+            },
+            new Announcement
+            {
+                Title = "Christmas Feast — Attendance Confirmation Required",
+                Body = "Students intending to remain at Hogwarts over the Christmas holiday are asked to confirm their attendance at the Christmas Feast by 15 December. Please notify your Head of House in writing. Students returning home for the holiday should ensure they are packed and ready to board the Hogwarts Express on the morning of 20 December. The train departs from Hogsmeade station at 10:00 and arrives at King's Cross at approximately 16:30.",
+                Category = "Events",
+                PublishedDate = new DateTime(2025, 12, 10)
+            },
+            new Announcement
+            {
+                Title = "Duelling Club — Sign-Ups Now Open",
+                Body = "The Duelling Club is accepting applications for the autumn term. The club is open to students in Year 3 and above. Sessions focus on controlled, supervised spell practice and are designed to build confidence in defensive magic. Meetings are held fortnightly on Saturday evenings in the Great Hall. Students should submit their name and year to their Head of House by the end of October.",
+                Category = "Events",
+                PublishedDate = new DateTime(2025, 10, 14)
+            },
+            new Announcement
+            {
+                Title = "Welcome Back — Sorting Ceremony Notice",
+                Body = "The Sorting Ceremony will take place on 1 September in the Great Hall following the arrival of all students aboard the Hogwarts Express. Returning students are reminded to change into their robes before leaving the train. First-year students will be escorted from the station to the castle by the Keeper of Keys and Grounds. The Opening Feast begins immediately after the Sorting. All students are expected to be present.",
+                Category = "Academic",
+                PublishedDate = new DateTime(2025, 9, 1)
             }
         );
 

@@ -10,7 +10,7 @@ public class EventsController : Controller
 
     public EventsController(AppDbContext db) => _db = db;
 
-    // Fetches all events ordered by date ascending
+    // Splits events into upcoming and past relative to today
     public async Task<IActionResult> Index()
     {
         ViewData["Title"] = "Events";
@@ -18,6 +18,8 @@ public class EventsController : Controller
         var events = await _db.Events
             .OrderBy(e => e.EventDate)
             .ToListAsync();
+
+        ViewData["Today"] = DateTime.Today;
 
         return View(events);
     }

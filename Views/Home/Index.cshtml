@@ -57,8 +57,15 @@
           <div class="news-panel-header">NEWS</div>
           @foreach (var item in Model.LatestAnnouncements)
           {
+            var newsImg = item.Category switch
+            {
+                "Sports"   => "quidditch-pitch.webp",
+                "Academic" => "students-in-class.webp",
+                "Events"   => "the-great-hall.png",
+                _          => "ministry-of-magic-logo.webp"
+            };
             <a asp-controller="Announcements" asp-action="Index" class="news-item">
-              <img src="~/assets/images/ministry-of-magic-logo.webp" alt="@item.Title" class="news-thumb" />
+              <img src="~/assets/images/@newsImg" alt="@item.Title" class="news-thumb" />
               <div class="news-item-body">
                 <p class="news-item-title">@item.Title</p>
                 <span class="news-item-date"><i class="bi bi-calendar3"></i> @item.PublishedDate.ToString("dd-MM-yyyy")</span>

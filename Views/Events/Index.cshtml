@@ -1,30 +1,66 @@
 @model IEnumerable<SchoolEvent>
+@{
+    var today = (DateTime)(ViewData["Today"] ?? DateTime.Today);
+    var upcoming = Model.Where(e => e.EventDate >= today).ToList();
+    var past = Model.Where(e => e.EventDate < today).OrderByDescending(e => e.EventDate).ToList();
+}
 
 <!-- Page hero -->
 <section class="page-hero">
   <div class="container-fluid px-4">
-    <h1 class="page-hero-title">Upcoming Events</h1>
+    <h1 class="page-hero-title">Events</h1>
     <p class="page-hero-subtitle">Ceremonies, matches, feasts, and examinations across the academic year</p>
   </div>
 </section>
 
-<!-- Events -->
+<!-- Upcoming events -->
 <section id="events" class="inner-section">
   <div class="container">
-    <h2 class="section-heading">Academic Year 2025 – 2026</h2>
-    @foreach (var ev in Model)
+    <h2 class="section-heading">Upcoming Events</h2>
+    @if (upcoming.Any())
     {
-      <div class="event-item">
-        <div class="event-date-badge">
-          <span class="event-date-day">@ev.EventDate.ToString("dd")</span>
-          <span class="event-date-month">@ev.EventDate.ToString("MMM")</span>
+      @foreach (var ev in upcoming)
+      {
+        <div class="event-item">
+          <div class="event-date-badge">
+            <span class="event-date-day">@ev.EventDate.ToString("dd")</span>
+            <span class="event-date-month">@ev.EventDate.ToString("MMM")</span>
+          </div>
+          <div class="event-body">
+            <p class="event-name">@ev.Title</p>
+            <p class="event-location"><i class="bi bi-geo-alt me-1"></i>@ev.Location</p>
+            <p class="event-desc">@ev.Description</p>
+          </div>
         </div>
-        <div class="event-body">
-          <p class="event-name">@ev.Title</p>
-          <p class="event-location"><i class="bi bi-geo-alt me-1"></i>@ev.Location</p>
-          <p class="event-desc">@ev.Description</p>
-        </div>
-      </div>
+      }
+    }
+    else
+    {
+      <p class="section-lead">No upcoming events scheduled at this time.</p>
     }
   </div>
 </section>
+
+<!-- Past events -->
+@if (past.Any())
+{
+  <section id="events-past" class="inner-section inner-section--alt">
+    <div class="container">
+      <h2 class="section-heading">Past Events</h2>
+      @foreach (var ev in past)
+      {
+        <div class="event-item event-item--past">
+          <div class="event-date-badge">
+            <span class="event-date-day">@ev.EventDate.ToString("dd")</span>
+            <span class="event-date-month">@ev.EventDate.ToString("MMM")</span>
+          </div>
+          <div class="event-body">
+            <p class="event-name">@ev.Title</p>
+            <p class="event-location"><i class="bi bi-geo-alt me-1"></i>@ev.Location</p>
+            <p class="event-desc">@ev.Description</p>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+}

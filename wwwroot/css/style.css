@@ -1086,6 +1086,14 @@ body {
   align-items: flex-start;
 }
 
+.event-item--past {
+  opacity: 0.6;
+}
+
+.event-item--past .event-date-badge {
+  background: #888;
+}
+
 .event-date-badge {
   background: #7b0000;
   color: #fff;
@@ -1228,4 +1236,40 @@ body {
   .event-date-day {
     font-size: 1.2rem;
   }
+}
+
+/* ── Error page ─────────────────────────────────────────── */
+.error-page {
+  padding: 60px 20px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.error-code {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #7b0000;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.error-message {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 28px;
+}
+
+.btn-primary-hogwarts {
+  display: inline-block;
+  background: #7b0000;
+  color: #fff;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.btn-primary-hogwarts:hover {
+  background: #5a0000;
+  color: #fff;
 }
