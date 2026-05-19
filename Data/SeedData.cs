@@ -275,6 +275,15 @@ public static class SeedData
                 Bio = "Madam Hooch teaches first-year students to fly and serves as the official referee for all Hogwarts Quidditch matches. She has hawk-like yellow eyes and a broom she can manoeuvre with extraordinary precision. She trained at the Quidditch Academy of Excellence in her youth.",
                 PhotoPath = "madam-hooch.jpg",
                 IsHeadmaster = false
+            },
+            new StaffMember
+            {
+                FullName = "Galatea Merrythought",
+                Title = "Professor",
+                Subject = "Defence Against the Dark Arts",
+                Bio = "Professor Merrythought brings decades of practical experience to the Defence Against the Dark Arts classroom. A former Auror, she is known for her rigorous and structured approach to the curriculum, emphasising both theoretical understanding and practical spell-work. She returned to Hogwarts after a period of service with the Ministry of Magic.",
+                PhotoPath = null,
+                IsHeadmaster = false
             }
         );
 

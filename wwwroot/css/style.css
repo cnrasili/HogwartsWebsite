@@ -598,6 +598,26 @@ body {
 }
 
 /* ===== ABOUT — HEADMASTERS ===== */
+.past-headmaster-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid #c8b87a;
+  padding: 20px;
+  height: 100%;
+}
+
+.past-headmaster-card--featured {
+  border-left-color: #7b0000;
+  background: #fdf8f0;
+}
+
+.past-headmaster-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2a1a00;
+  margin-bottom: 6px;
+}
+
 .headmaster-tenure {
   font-size: 0.73rem;
   font-weight: 700;
@@ -612,11 +632,6 @@ body {
   color: #555;
   line-height: 1.7;
   margin: 0;
-}
-
-.headmaster-card--featured {
-  border-left-color: #7b0000;
-  background: #fdf8f0;
 }
 
 /* ===== ABOUT — FOUNDERS ===== */
