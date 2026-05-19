@@ -1,0 +1,55 @@
+@model StaffMember
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+    <form asp-controller="AdminStaff" asp-action="Edit" asp-route-id="@Model.Id" method="post" enctype="multipart/form-data">
+      <input asp-for="Id" type="hidden" />
+      <input asp-for="PhotoPath" type="hidden" />
+      <div class="row mb-3">
+        <div class="col-md-8">
+          <label asp-for="FullName" class="form-label"></label>
+          <input asp-for="FullName" class="form-control" />
+          <span asp-validation-for="FullName" class="text-danger small"></span>
+        </div>
+        <div class="col-md-4">
+          <label asp-for="Title" class="form-label"></label>
+          <input asp-for="Title" class="form-control" />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Subject" class="form-label"></label>
+        <input asp-for="Subject" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label asp-for="Bio" class="form-label"></label>
+        <textarea asp-for="Bio" class="form-control" rows="5"></textarea>
+        <span asp-validation-for="Bio" class="text-danger small"></span>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Photo</label>
+        @if (Model.PhotoPath != null)
+        {
+          <div class="mb-2">
+            <img src="~/assets/images/@Model.PhotoPath" alt="Current photo" class="admin-photo-preview" />
+            <span class="text-muted small ms-2">Current: @Model.PhotoPath</span>
+          </div>
+        }
+        <input type="file" name="photo" class="form-control" accept="image/*" />
+        <div class="form-text">Upload a new photo to replace the current one.</div>
+      </div>
+      <div class="mb-4">
+        <div class="form-check">
+          <input asp-for="IsHeadmaster" class="form-check-input" />
+          <label asp-for="IsHeadmaster" class="form-check-label">Is Headmaster</label>
+        </div>
+      </div>
+      <div class="d-flex gap-2">
+        <button type="submit" class="admin-btn admin-btn--primary">Save</button>
+        <a href="/admin/staff" class="admin-btn admin-btn--secondary">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>

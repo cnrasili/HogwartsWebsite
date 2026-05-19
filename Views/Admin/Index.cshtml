@@ -1,0 +1,53 @@
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="row g-4 mb-4">
+  <div class="col-sm-6 col-lg-3">
+    <div class="admin-stat-card">
+      <div class="admin-stat-number">@ViewData["AnnouncementCount"]</div>
+      <div class="admin-stat-label">Announcements</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="admin-stat-card">
+      <div class="admin-stat-number">@ViewData["EventCount"]</div>
+      <div class="admin-stat-label">Events</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="admin-stat-card">
+      <div class="admin-stat-number">@ViewData["StaffCount"]</div>
+      <div class="admin-stat-label">Staff Members</div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-3">
+    <div class="admin-stat-card">
+      <div class="admin-stat-number">@ViewData["CourseCount"]</div>
+      <div class="admin-stat-label">Courses</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-md-6 col-lg-3">
+    <a href="/admin/announcements" class="admin-btn admin-btn--primary d-block text-center">
+      <i class="bi bi-megaphone me-2"></i>Manage Announcements
+    </a>
+  </div>
+  <div class="col-md-6 col-lg-3">
+    <a href="/admin/events" class="admin-btn admin-btn--primary d-block text-center">
+      <i class="bi bi-calendar-event me-2"></i>Manage Events
+    </a>
+  </div>
+  <div class="col-md-6 col-lg-3">
+    <a href="/admin/staff" class="admin-btn admin-btn--primary d-block text-center">
+      <i class="bi bi-people me-2"></i>Manage Staff
+    </a>
+  </div>
+  <div class="col-md-6 col-lg-3">
+    <a href="/admin/courses" class="admin-btn admin-btn--primary d-block text-center">
+      <i class="bi bi-book me-2"></i>Manage Courses
+    </a>
+  </div>
+</div>

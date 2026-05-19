@@ -1,0 +1,38 @@
+@model IEnumerable<SchoolEvent>
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="admin-section-header">
+  <span></span>
+  <a href="/admin/events/create" class="admin-btn admin-btn--primary">
+    <i class="bi bi-plus me-1"></i>New Event
+  </a>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-hover admin-table">
+    <thead class="table-dark">
+      <tr>
+        <th>Title</th>
+        <th>Location</th>
+        <th style="width:150px">Date</th>
+        <th style="width:130px">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (var item in Model)
+      {
+        <tr>
+          <td>@item.Title</td>
+          <td>@item.Location</td>
+          <td>@item.EventDate.ToString("dd MMM yyyy HH:mm")</td>
+          <td>
+            <a href="/admin/events/edit/@item.Id" class="admin-btn admin-btn--secondary me-1">Edit</a>
+            <a href="/admin/events/delete/@item.Id" class="admin-btn admin-btn--danger">Delete</a>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

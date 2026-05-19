@@ -4,6 +4,12 @@ using HogwartsWebsite.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(8);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 // SQLite via EF Core
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -27,6 +33,7 @@ if (!app.Environment.IsDevelopment())
 
 // Static files served before routing
 app.UseStaticFiles();
+app.UseSession();
 app.UseRouting();
 app.UseAuthorization();
 

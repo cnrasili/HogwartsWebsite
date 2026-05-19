@@ -1,0 +1,36 @@
+@model SchoolEvent
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+    <form asp-controller="AdminEvents" asp-action="Edit" asp-route-id="@Model.Id" method="post">
+      <input asp-for="Id" type="hidden" />
+      <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger small"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Location" class="form-label"></label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger small"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="EventDate" class="form-label"></label>
+        <input asp-for="EventDate" type="datetime-local" class="form-control" />
+        <span asp-validation-for="EventDate" class="text-danger small"></span>
+      </div>
+      <div class="mb-4">
+        <label asp-for="Description" class="form-label"></label>
+        <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+        <span asp-validation-for="Description" class="text-danger small"></span>
+      </div>
+      <div class="d-flex gap-2">
+        <button type="submit" class="admin-btn admin-btn--primary">Save</button>
+        <a href="/admin/events" class="admin-btn admin-btn--secondary">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>

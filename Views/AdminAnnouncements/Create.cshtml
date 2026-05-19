@@ -1,0 +1,41 @@
+@model Announcement
+@{
+    Layout = "_AdminLayout";
+}
+
+<div class="row justify-content-center">
+  <div class="col-lg-7">
+    <form asp-controller="AdminAnnouncements" asp-action="Create" method="post">
+      <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger small"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="Category" class="form-label"></label>
+        <select asp-for="Category" class="form-select">
+          <option value="">-- Select --</option>
+          <option>Academic</option>
+          <option>Sports</option>
+          <option>Safety</option>
+          <option>Events</option>
+        </select>
+        <span asp-validation-for="Category" class="text-danger small"></span>
+      </div>
+      <div class="mb-3">
+        <label asp-for="PublishedDate" class="form-label"></label>
+        <input asp-for="PublishedDate" type="date" class="form-control" />
+        <span asp-validation-for="PublishedDate" class="text-danger small"></span>
+      </div>
+      <div class="mb-4">
+        <label asp-for="Body" class="form-label"></label>
+        <textarea asp-for="Body" class="form-control" rows="6"></textarea>
+        <span asp-validation-for="Body" class="text-danger small"></span>
+      </div>
+      <div class="d-flex gap-2">
+        <button type="submit" class="admin-btn admin-btn--primary">Save</button>
+        <a href="/admin/announcements" class="admin-btn admin-btn--secondary">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
