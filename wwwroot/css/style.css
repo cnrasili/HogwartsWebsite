@@ -1431,3 +1431,9 @@ body {
 
 .footer-admin-link { opacity: 0.25; font-size: 0.7rem; color: inherit; text-decoration: none; }
 .footer-admin-link:hover { opacity: 0.6; }
+
+/* Admin table column widths */
+.admin-col-xs  { width: 90px; }
+.admin-col-sm  { width: 110px; }
+.admin-col-md  { width: 130px; }
+.admin-col-lg  { width: 160px; }
