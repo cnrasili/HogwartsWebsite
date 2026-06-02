@@ -8,6 +8,9 @@ CLAUDE.md
 # OS artifacts
 .DS_Store
 Thumbs.db
+
+# Publish output
+/publish/
 desktop.ini
 
 # Editor artifacts
