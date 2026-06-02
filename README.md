@@ -2,6 +2,8 @@
 
 An institutional website for Hogwarts School, built as if the school were a real-world educational institution. Presents the school's history, academic staff, courses, houses, announcements, and events. Data is persisted in a SQLite database and served via ASP.NET Core MVC with Razor views. A password-protected admin panel allows full CRUD management of all dynamic content.
 
+**Live:** https://hogwartswebsite-production.up.railway.app
+
 ---
 
 ## Table of Contents
